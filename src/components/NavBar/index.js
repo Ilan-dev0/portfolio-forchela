@@ -3,27 +3,27 @@ import {FaBars} from 'react-icons/fa'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavBarElements'
 import logo from '../../assets/img/logo2.png'
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
     return(
         <>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'><img style={{width: '100%'}} src={logo} /></NavLogo>
-                        <MobileIcon>
+                        <MobileIcon onClick={toggle}>
                             <FaBars />
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to="home">Home</NavLinks>
+                                <NavLinks to="/home">Home</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="home">Serviços</NavLinks>
+                                <NavLinks to="/servicos">Serviços</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="home">Sobre Nós</NavLinks>
+                                <NavLinks to="/sobre">Sobre Nós</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="home">Fale Conosco</NavLinks>
+                                <NavLinks to="/contato">Fale Conosco</NavLinks>
                             </NavItem>
                         </NavMenu>
                 </NavbarContainer>
