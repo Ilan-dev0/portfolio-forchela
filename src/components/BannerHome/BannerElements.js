@@ -4,6 +4,7 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 export const BannerContainer = styled.div`
   margin-top: 20px;
+  margin-right: -80px;
   padding-left: 10%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.87) 0%, #000000 100%);
   display: flex;
