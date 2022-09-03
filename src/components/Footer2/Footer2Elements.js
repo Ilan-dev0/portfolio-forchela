@@ -66,3 +66,15 @@ export const FooterLink = styled(Link)`
     transition: 0.3s ease-out
   }
 `
+
+export const FooterSocial = styled.a`
+  color: #8E8E8E;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+
+  &:hover { 
+    color: #473B90;
+    transition: 0.3s ease-out
+  }
+`

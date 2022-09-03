@@ -1,6 +1,6 @@
 import React from 'react'
 import { Heading } from '../DivInfo/InfoElements'
-import { Footer2Container, FooterWrap, FooterLinksContainer, FooterLinksItems, FooterLinkTitle, FooterLink, FooterLinksWrapper } from './Footer2Elements'
+import { FooterSocial, Footer2Container, FooterWrap, FooterLinksContainer, FooterLinksItems, FooterLinkTitle, FooterLink, FooterLinksWrapper } from './Footer2Elements'
 
 const Footer2 = () => {
   return (
@@ -10,8 +10,8 @@ const Footer2 = () => {
             <FooterLinksWrapper>
               <FooterLinksItems>
                 <FooterLinkTitle>Atendimento ao cliente</FooterLinkTitle>
-                  <FooterLink to="https://api.whatsapp.com/message/HZGY2ELC6CGBM1?autoload=1&app_absent=0">(11)9999-9999</FooterLink>
-                  <FooterLink to="/services">forchela@forchela.com</FooterLink>          
+                  <FooterSocial href="https://api.whatsapp.com/message/HZGY2ELC6CGBM1?autoload=1&app_absent=0">(11) 4236-9810</FooterSocial>
+                  <FooterSocial href="">forchela@forchela.com</FooterSocial>          
               </FooterLinksItems>
               <FooterLinksItems>
                 <FooterLinkTitle>Forchela</FooterLinkTitle>
@@ -20,8 +20,8 @@ const Footer2 = () => {
               </FooterLinksItems>
               <FooterLinksItems>
                 <FooterLinkTitle>Siga-nos</FooterLinkTitle>
-                  <FooterLink to="/services">Instagram</FooterLink>
-                  <FooterLink to="/services">Facebook</FooterLink>           
+                  <FooterSocial href="https://www.instagram.com/forchela.andercorrea/">Instagram</FooterSocial>
+                  <FooterSocial href="https://www.facebook.com/profile.php?id=100063039289635">Facebook</FooterSocial>           
               </FooterLinksItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
