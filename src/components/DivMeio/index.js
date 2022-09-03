@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Button } from '../ButtonElement'
 import image4 from '../../assets/img/image4.png'
-import { MeioContainer, MeioWrapper, CardImage, Image, CardText, Title, Text, TextWrapper, CardButtonWrapper} from './MeioElements'
+import { BtnLink, MeioContainer, MeioWrapper, CardImage, Image, CardText, Title, Text, TextWrapper, CardButtonWrapper} from './MeioElements'
 
 const DivMeio = () => {
 
@@ -30,7 +30,11 @@ const DivMeio = () => {
             dark='true'
             fontBig='true'
             big='true'
-            >SAIBA MAIS</Button>
+            >
+              <BtnLink to="/services">
+                SAIBA MAIS
+              </BtnLink>
+            </Button>
           </CardButtonWrapper>
         </CardText>
         

@@ -8,19 +8,14 @@ export const FooterContainer = styled.div`
   align-items: center;
   background: linear-gradient(180deg, #111111 0%, #000000 100%);
 
-  @media screen and (max-width: 768px){
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 480px){
-    height: 1300px;
-  }
 `
 
 export const ContatoWrapper = styled.div`
     max-width: 1100px;
     margin: 0 auto;
-    
+
+  
+
 `
 
 export const BudgetWrapper = styled.div`
@@ -29,6 +24,12 @@ export const BudgetWrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    
+
+    @media screen and (max-width: 820px) {
+      flex-direction: column;
+    }
 `
 
 export const Title = styled.h1`
@@ -107,9 +108,16 @@ export const FooterWrapper = styled.div`
   max-width: 1600px;
   height: 200px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   background: #0D0D0D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 820px){
+    padding-top: 32px;
+  }
 `

@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { Link as LinkR } from 'react-router-dom'
+import { Link as LinkS } from 'react-scroll'
+
 
 export const MeioContainer = styled.div`
   height: 541px;
@@ -30,7 +33,8 @@ export const CardImage = styled.div`
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px;
     margin: 30px;
-    margin-right: 200px
+    margin-right: 200px;
+    margin-left: 180px
 `
 
 export const Image = styled.img`
@@ -40,7 +44,7 @@ export const Image = styled.img`
 `
 
 export const CardText = styled.div`
-    width: 642px;
+   width: 550px;
     height: 444px;
     margin: 30px;
     background: #16141B;
@@ -70,8 +74,21 @@ export const Text = styled.p`
 `
 
 export const CardButtonWrapper = styled.div`
-  margin-right: 55%;
+  margin-right: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
+`
+
+export const BtnLink = styled(LinkR)`
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 `

@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   
   background: #fff;
   height: 80px;
-  margin-top: -80px; 
+  // margin-top: -80px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,9 +72,11 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+
+  
 `
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled(LinkR)`
   color: #000;
   display: flex;
   align-items: center;

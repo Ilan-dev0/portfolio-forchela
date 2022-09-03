@@ -12,7 +12,7 @@ export const InfoWrapper = styled.div`
   z-index: 1;
   height: 300px;
   width: 100%;
-  max-width: 1800px;
+  
   padding: 0 10px;
   justify-content: space-between;
   display: flex;
