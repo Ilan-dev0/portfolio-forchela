@@ -35,3 +35,27 @@ export const BannerBg3 = styled.div`
     height: 100%;
     overflow: hidden;    
 `
+
+export const BannerH1 = styled.h1`
+  color: #fff;
+  font-size: 60px;
+  
+
+  @media screen and (max-width: 768px){
+    font-size: 40px;
+  }
+
+  @media screen (max-width: 480px) {
+    font-size: 32px;
+  }
+`
+
+export const BannerContent = styled.div`
+  z-index: 3;
+  max-width: 1600px;
+  position: absolute;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  
+`

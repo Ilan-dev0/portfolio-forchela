@@ -35,3 +35,12 @@ export const BannerBg2 = styled.div`
     height: 100%;
     overflow: hidden;    
 `
+
+export const BannerBtnWrapper = styled.div`
+  margin-top: 32px;
+  margin-right: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+`

@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom'
 export const ServicesContainer = styled.div`
     margin-top: 20px;
     margin-right: -80px;
-    padding-left: 10%;
     background: #fff;
     display: flex;
     justify-content: start;
@@ -14,26 +13,35 @@ export const ServicesContainer = styled.div`
     z-index: 5;
 `
 
-export const ServicesWrapper = styled.div`
+export const ServicesRightWrapper = styled.div`
     padding: 48px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1100px;
+    max-width: 800px;
+    margin: 0  auto;
+`
+
+export const ServicesLeftWrapper = styled.div`
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
     margin: 0 auto;
 `
 
     export const ImgCard = styled.div`
         display: flex;
         flex-direction: row;
-        width: 900px;
+        width: 700px;
         height: 444px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 20px;
-        margin: 30px;
-        margin-right: 200px;
-        margin-left: 180px;
+        margin-top: 30px;
+        
         background: #0D0D0D
     `
 
