@@ -12,7 +12,7 @@ const Footer = () => {
   }
 
   return (
-    <FooterContainer>
+    <FooterContainer >
       <BudgetWrapper>
         <ContatoWrapper>
             <Title>FAÇA SEU ORÇAMENTO</Title>

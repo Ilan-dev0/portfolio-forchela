@@ -20,7 +20,9 @@ background: #fff;
 export const BaixoWrapper = styled.div`
   height: 460px;
   width: 100%;
-  max-width: 1800px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   border-bottom: 2px solid #000;
   border-top: 2px solid #000;
   display: flex;
@@ -71,6 +73,7 @@ export const CarouselWrapper = styled.div`
   display: flex;
   flex-direction: row;
   margin: 30px;
+  margin-right: 670px;
 `
 
 export const CarouselImageCard = styled.div`

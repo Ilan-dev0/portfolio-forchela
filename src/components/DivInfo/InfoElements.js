@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
+  display: flex;
 
   @media screen and (max-width: 768px){
     padding: 100px 0;
@@ -10,17 +11,17 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
   z-index: 1;
-  height: 300px;
+  height: 100%;
   width: 100%;
-  
   padding: 0 10px;
   justify-content: space-between;
   display: flex;
-  flex-direction: row
+  flex-direction: row;
 
   @media screen and (max-width: 768px){
     
     flex-direction: column;
+  
   }
 `
 
@@ -34,7 +35,7 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column
 
-  
+
 `
 
 export const TopLine = styled.p`

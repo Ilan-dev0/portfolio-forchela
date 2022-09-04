@@ -82,7 +82,7 @@ export const TextInput = styled.textarea`
 `
 
 export const BtnWrapper = styled.div`
-  margin-right: 75%;
+  margin-right: 65%;
   margin-top: 30px;
   display: flex;
   flex-direction: column;

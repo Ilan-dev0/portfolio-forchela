@@ -25,6 +25,11 @@ export const MeioWrapper = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const CardImage = styled.div`
@@ -33,8 +38,12 @@ export const CardImage = styled.div`
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px;
     margin: 30px;
-    margin-right: 200px;
-    margin-left: 180px
+    margin-right: 10px;
+    margin-left: 200px;
+
+    @media screen and (max-width: 768px){
+      margin: 0
+    }
 `
 
 export const Image = styled.img`

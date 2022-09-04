@@ -19,7 +19,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="/sobre" onClick={toggle}>
             Sobre Nós
           </SidebarLink>
-          <SidebarLink to="/contato" onClick={toggle}>
+          <SidebarLink to="contato" onClick={toggle}>
             Fale Conosco
           </SidebarLink>
         </SidebarMenu>

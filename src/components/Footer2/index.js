@@ -11,7 +11,7 @@ const Footer2 = () => {
               <FooterLinksItems>
                 <FooterLinkTitle>Atendimento ao cliente</FooterLinkTitle>
                   <FooterSocial href="https://api.whatsapp.com/message/HZGY2ELC6CGBM1?autoload=1&app_absent=0">(11) 4236-9810</FooterSocial>
-                  <FooterSocial href="">forchela@forchela.com</FooterSocial>          
+                  <FooterSocial href="">andersoncorrea76@hotmail.com</FooterSocial>          
               </FooterLinksItems>
               <FooterLinksItems>
                 <FooterLinkTitle>Forchela</FooterLinkTitle>
