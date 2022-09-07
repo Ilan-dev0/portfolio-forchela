@@ -22,7 +22,7 @@ const BannerHome = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum odio libero, a scelerisque leo interdum a.  
         </BannerP>
         <BannerBtnWrapper>
-          <Button to='signup'
+          <Button to="contato" 
            onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'

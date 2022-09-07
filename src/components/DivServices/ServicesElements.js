@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import {Link} from 'react-router-dom'
+import { Link as LinkS } from 'react-scroll'
 
 export const ServicesContainer = styled.div`
     margin-top: 20px;
@@ -11,6 +12,10 @@ export const ServicesContainer = styled.div`
     height: 100%;
     position: relative;
     z-index: 5;
+
+    @media screen and (max-width: 1400px){
+        flex-direction: column;
+    }
 `
 
 export const ServicesRightWrapper = styled.div`
@@ -21,6 +26,8 @@ export const ServicesRightWrapper = styled.div`
     align-items: center;
     max-width: 800px;
     margin: 0  auto;
+
+
 `
 
 export const ServicesLeftWrapper = styled.div`
@@ -31,6 +38,8 @@ export const ServicesLeftWrapper = styled.div`
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
+
+
 `
 
     export const ImgCard = styled.div`
@@ -40,9 +49,10 @@ export const ServicesLeftWrapper = styled.div`
         height: 444px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 20px;
-        margin-top: 30px;
-        
+        margin-top: 30px;       
         background: #0D0D0D
+
+        
     `
 
 export const BgImg = styled.img`   
@@ -95,4 +105,17 @@ export const CardButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`
+
+export const BtnLink = styled(LinkS)`
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 `

@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import Forchela from '../../assets/img/Branca1.png'
 import { Button } from '../ButtonElement'
-import { ContatoWrapper, EmailInput, FooterContainer, NameInput, TextInput, Title, BtnWrapper, LogoWrapper, LogoImg, FooterWrapper, BudgetWrapper } from './FooterElements'
+import { ButtonSubmit, ContatoWrapper, EmailInput, FooterContainer, NameInput, TextInput, Title, BtnWrapper, LogoWrapper, LogoImg, FooterWrapper, BudgetWrapper, FormOrcamento } from './FooterElements'
+import emailjs from "emailjs-com"
 
 const Footer = () => {
 
@@ -11,14 +12,27 @@ const Footer = () => {
     setHover(!hover)
   }
 
+    function sendEmail(e){
+      e.preventDefault();
+
+      emailjs.sendForm('service_b0p5eve', 
+      'template_wm3aiwm',  
+      e.target, 
+      'r1kWaGXaJb4yDq_WS').then(res=>{
+        console.log(res);
+      }).catch(err=> console.log(err));
+    }
+
   return (
-    <FooterContainer >
+    <FooterContainer id="contato" >
       <BudgetWrapper>
         <ContatoWrapper>
             <Title>FAÇA SEU ORÇAMENTO</Title>
-            <NameInput placeholderTextColor="#fff" placeholder='Insira seu nome' />
-            <EmailInput placeholderTextColor="#fff" placeholder='Insira seu email' />
-            <TextInput placeholderTextColor="#fff" placeholder='Escreva sua mensagem' />
+            <FormOrcamento onSubmit={sendEmail}>
+            <NameInput placeholderTextColor="#fff" placeholder='Insira seu nome' className="form-control" name="name" />
+            <EmailInput placeholderTextColor="#fff" placeholder='Insira seu email' className="form-control" name='user_email' />
+            <TextInput placeholderTextColor="#fff" placeholder='Escreva sua mensagem' Name='message' className="form-control" rows='4' />
+            </FormOrcamento>
             <BtnWrapper>
             <Button onMouseEnter={onHover}
             onMouseLeave={onHover}

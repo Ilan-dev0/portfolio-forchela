@@ -22,7 +22,7 @@ const BannerServices = () => {
                 <BannerH1>SERVIÇOS QUE SÓ A FORCHELA 
                  <br></br> OFERECE</BannerH1>
                 <BannerBtnWrapper>
-                    <Button to='signup'
+                    <Button to="contato"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary='true'

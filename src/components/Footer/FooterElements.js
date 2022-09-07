@@ -8,6 +8,10 @@ export const FooterContainer = styled.div`
   align-items: center;
   background: linear-gradient(180deg, #111111 0%, #000000 100%);
 
+  @media screen and (max-width: 820px){
+    height: 900px;
+  }
+
 `
 
 export const ContatoWrapper = styled.div`
@@ -38,6 +42,10 @@ export const Title = styled.h1`
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
+
+    @media screen and (max-width: 820px){
+      margin-left: 10%;
+    }
 `
 
 export const Text = styled.p`
@@ -47,6 +55,18 @@ export const Text = styled.p`
     font-size: 18px;
     line-height: 24px;
 `
+
+export const FormOrcamento = styled.div`
+  color: palevioletred;
+  display: block;
+  width: 100%;
+  margin: 50px auto;
+
+  @media screen and (max-width: 820px){
+    width: 80%;
+  }
+`
+
 export const NameInput = styled.input`
   margin-top: 10px;
   width: 100%;
@@ -56,6 +76,11 @@ export const NameInput = styled.input`
   border-radius: 10px;
   font-size: 20px;
   opacity: 0.7
+  
+
+  @media screen and (max-width: 820px){
+    width: 80%;
+  }
 `
 
 export const EmailInput = styled.input`
@@ -67,7 +92,31 @@ export const EmailInput = styled.input`
   border-radius: 10px;
   font-size: 20px;
   opacity: 0.7
+
+  @media screen and (max-width: 820px){
+    margin: 50px;
+  }
 `
+
+export const ButtonSubmit = styled.input.attrs({type: 'submit'})`
+  background: #00aec9;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 5px;
+  height: 35px;
+  border-color: transparent;
+  box-shadow: 0px;
+  outline: none;
+  transition: 0.15s;
+  text-align: center;
+  &:active {
+    background-color: #f1ac15;
+  }
+`
+
 
 export const TextInput = styled.textarea`
     margin-top: 20px;
@@ -87,6 +136,10 @@ export const BtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 820px){
+    margin-right: 55%;
+  }
 `
 
 export const LogoWrapper = styled.div`
@@ -96,6 +149,11 @@ export const LogoWrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-left: 30%;
+
+    @media screen and (max-width: 820px){
+      margin: 30px;
+      margin-top: 60px;
+    }
 `
 
 export const LogoImg = styled.img`
@@ -119,5 +177,6 @@ export const FooterWrapper = styled.div`
 
   @media screen and (max-width: 820px){
     padding-top: 32px;
+    height: 300px;
   }
 `

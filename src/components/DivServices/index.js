@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 import ImgBg from '../../assets/img/image1.png'
-import { ServicesContainer, ServicesRightWrapper, ServicesLeftWrapper, ImgCard, BgImg, TextWrapper, ServicesH1, ServicesP, CardButtonWrapper } from './ServicesElements'
-import { BtnLink } from '../DivMeio/MeioElements'
+import { ServicesContainer, ServicesRightWrapper, ServicesLeftWrapper, ImgCard, BgImg, TextWrapper, ServicesH1, ServicesP, CardButtonWrapper, BtnLink } from './ServicesElements'
 import { ArrowForward } from '../BannerHome/BannerElements'
 import { Button } from '../ButtonElement'
 
-const DivServices = () => {
+const DivServices = ( toggle ) => {
 
   const [hover, setHover] = useState(false)
 
@@ -29,7 +28,7 @@ const DivServices = () => {
             dark='true'
             
             >
-              <BtnLink to="/services">
+              <BtnLink to="contato">
               <ArrowForward />
               </BtnLink>
             </Button>
@@ -49,7 +48,7 @@ const DivServices = () => {
             dark='true'
             
             >
-              <BtnLink to="/services">
+              <BtnLink to="contato">
               <ArrowForward />
               </BtnLink>
             </Button>
@@ -69,7 +68,7 @@ const DivServices = () => {
             dark='true'
             
             >
-              <BtnLink to="/services">
+              <BtnLink to="contato">
               <ArrowForward />
               </BtnLink>
             </Button>
@@ -80,7 +79,7 @@ const DivServices = () => {
       </ServicesRightWrapper>
 
       <ServicesLeftWrapper>
-        <ImgCard>
+      <ImgCard>
           <BgImg src={ImgBg} />
           <TextWrapper>
             <ServicesH1>TITULO</ServicesH1>
@@ -92,7 +91,7 @@ const DivServices = () => {
             dark='true'
             
             >
-              <BtnLink to="/services">
+              <BtnLink to="contato">
               <ArrowForward />
               </BtnLink>
             </Button>
@@ -112,7 +111,7 @@ const DivServices = () => {
             dark='true'
             
             >
-              <BtnLink to="/services">
+              <BtnLink to="contato">
               <ArrowForward />
               </BtnLink>
             </Button>
@@ -132,7 +131,7 @@ const DivServices = () => {
             dark='true'
             
             >
-              <BtnLink to="/services">
+              <BtnLink to="contato">
               <ArrowForward />
               </BtnLink>
             </Button>

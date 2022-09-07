@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { CardButtonWrapper, AboutContainer, AboutWrapper, MeioWrapper, TitleH1, AboutH1, AboutN, AboutP, TextWrapper, BaixoWrapper, Title1Wrapper, Title2Wrapper } from './DivAboutElements'
+import { TextWrapper2, CardButtonWrapper, AboutContainer, AboutWrapper, MeioWrapper, TitleH1, AboutH1, AboutN, AboutP, TextWrapper, BaixoWrapper, Title1Wrapper, Title2Wrapper } from './DivAboutElements'
 import { BtnLink } from '../DivMeio/MeioElements'
 import { ArrowForward } from '../BannerHome/BannerElements'
 import { Button } from '../ButtonElement'
@@ -27,10 +27,10 @@ const DivAbout = () => {
 
             <BaixoWrapper>
                 <Title2Wrapper>
-                    <TextWrapper>
+                    <TextWrapper2>
                         <TitleH1>Lorem ipsum dolor sit amet</TitleH1>
                         <AboutP>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum odio libero, a scelerisque leo interdum a. Duis vel erat id sapien faucibus venenatis sit amet vel lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum diam leo, rhoncus ut euismod non, dictum sodales lectus. Quisque ornare sodales nisl, at luctus orci imperdiet vitae. Nam massa metus, fringilla vel lobortis et, dictum nec lacus. Donec rutrum ipsum ac eleifend varius.</AboutP>
-                    </TextWrapper>
+                    </TextWrapper2>
                 </Title2Wrapper>
                 <Title1Wrapper>
                     <TextWrapper>

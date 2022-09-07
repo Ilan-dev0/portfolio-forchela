@@ -1,6 +1,6 @@
 import React from "react";
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavBarElements'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLinksS} from './NavBarElements'
 import { animateScroll as Scroll } from 'react-scroll' 
 import logo from '../../assets/img/logo2.png'
 
@@ -24,7 +24,7 @@ const NavBar = ({ toggle }) => {
                                 <NavLinks to="/about">Sobre Nós</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="contato">Fale Conosco</NavLinks>
+                                <NavLinksS to="contato">Fale Conosco</NavLinksS>
                             </NavItem>
                         </NavMenu>
                 </NavbarContainer>

@@ -50,6 +50,12 @@ export const Image = styled.img`
     
     width: 642px;
     height: 444px;
+
+    @media screen and (max-width: 768px){
+      width: 90%;
+      height: 90%;
+      margin-left: 30px;
+    }
 `
 
 export const CardText = styled.div`

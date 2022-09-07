@@ -1,6 +1,6 @@
 import { Carousel } from 'bootstrap'
 import React from 'react'
-import { BaixoContainer, BaixoWrapper, CarouselImage, CarouselImageCard, CarouselWrapper, Heading, Subtitle, TextWrapper } from './BaixoElements'
+import { BaixoContainer, BaixoWrapper, CarouselImage, CarouselImageCard, CarouselWrapper, Heading, Subtitle, TextWrapper, CarouselLink } from './BaixoElements'
 import Image1 from '../../assets/img/image1.png'
 import Image2 from '../../assets/img/image2.png'
 import Image3 from '../../assets/img/image3.png'
@@ -15,9 +15,15 @@ const DivBaixo = () => {
             </TextWrapper>
             <CarouselWrapper>
               <CarouselImageCard>
-                <CarouselImage src={Image1} />
-                <CarouselImage src={Image2} />
-                <CarouselImage src={Image3} />
+                <CarouselLink to="/services">
+                  <CarouselImage src={Image1} />
+                </CarouselLink>
+                <CarouselLink to="/services">
+                  <CarouselImage src={Image2} />
+                </CarouselLink>
+                <CarouselLink to="/services">
+                  <CarouselImage src={Image3} />
+                </CarouselLink>
               </CarouselImageCard>
             </CarouselWrapper>
         </BaixoWrapper>

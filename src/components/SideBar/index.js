@@ -1,6 +1,6 @@
 import React from 'react'
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu,
-SidebarLink } from './SideBarElements'
+SidebarLink, SidebarLinkS } from './SideBarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -10,18 +10,18 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="/home" onClick={toggle}>
+          <SidebarLink to="/home">
             Home
           </SidebarLink>
-          <SidebarLink to="/servicos" onClick={toggle}>
+          <SidebarLink to="/services">
             Serviços
           </SidebarLink>
-          <SidebarLink to="/sobre" onClick={toggle}>
+          <SidebarLink to="/about">
             Sobre Nós
           </SidebarLink>
-          <SidebarLink to="contato" onClick={toggle}>
+          <SidebarLinkS to="contato">
             Fale Conosco
-          </SidebarLink>
+          </SidebarLinkS>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
