@@ -121,7 +121,7 @@ max-width: 300px;
     
 
     @media screen and (max-width: 1400px){
-      flex-diretion: column;
+      display: none;
     }
 `
 

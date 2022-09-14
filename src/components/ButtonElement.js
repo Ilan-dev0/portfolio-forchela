@@ -20,4 +20,8 @@ export const Button = styled(Link)`
         transition: all 0.2s ease-in-out;
         background: ${({primary}) => (primary ? '#6757cc' : '#473B90')};
     }
+
+    @media screen and (max-width: 768px){
+        padding: ${({big}) => (big ? '10px 20px' : '12px 30px')};
+    }
 `

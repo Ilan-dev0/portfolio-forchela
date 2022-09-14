@@ -21,10 +21,11 @@ export const MeioContainer = styled.div`
 `
 
 export const MeioWrapper = styled.div`
-  max-width: 2000px;
+  max-width: auto;
+  min-width: auto;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   @media screen and (max-width: 768px){
     display: flex;
@@ -33,8 +34,8 @@ export const MeioWrapper = styled.div`
 `
 
 export const CardImage = styled.div`
-    width: 642px;
-    height: 444px;
+    max-width: auto;
+    min-width: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px;
     margin: 30px;
@@ -48,31 +49,38 @@ export const CardImage = styled.div`
 
 export const Image = styled.img`
     
-    width: 642px;
-    height: 444px;
+    
+    width: 100%;
+    
 
     @media screen and (max-width: 768px){
-      width: 90%;
-      height: 90%;
       margin-left: 30px;
+      width: 90%;
     }
 `
 
 export const CardText = styled.div`
-   width: 550px;
+    max-width: auto;
+    min-width: auto;
     height: 444px;
     margin: 30px;
     background: #16141B;
     border-radius: 20px;
+
+    @media screen and (max-width: 768px){
+      margin-left: 30px;
+    }
 `
 
 export const TextWrapper = styled.div`
+
     padding: 50px;
     justify-content: center;
     align-items: center;
 `
 
 export const Title = styled.h1`
+
     color: #fff;
     margin-bottom: 35px;
     font-size: 40px;
@@ -82,10 +90,11 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
     color: #656079;
-    max-width: 440px;
     margin-bottom: -10px;
     font-size: 18px;
     line-height: 24px;
+    max-width: auto;
+    min-width: auto;
 `
 
 export const CardButtonWrapper = styled.div`
@@ -93,6 +102,10 @@ export const CardButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 768px){
+    
+  }
 `
 
 export const BtnLink = styled(LinkR)`

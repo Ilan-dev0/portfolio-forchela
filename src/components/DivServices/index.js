@@ -39,7 +39,7 @@ const DivServices = ( toggle ) => {
         <ImgCard>
           <BgImg src={ImgBg} />
           <TextWrapper>
-            <ServicesH1>TITULO</ServicesH1>
+            <ServicesH1>ESPELHO</ServicesH1>
             <ServicesP>Lorem ipsum dolor sit amet, consectetur adipiscing elit. odio libero, a scelerisque leo interdum a.  Duis vel erat sapien faucibus venenatis sit amet vel lectus. Class aptent</ServicesP>
             <CardButtonWrapper>
           <Button onMouseEnter={onHover}
@@ -76,9 +76,9 @@ const DivServices = ( toggle ) => {
           </TextWrapper>
         </ImgCard>
         
-      </ServicesRightWrapper>
+      
 
-      <ServicesLeftWrapper>
+      
       <ImgCard>
           <BgImg src={ImgBg} />
           <TextWrapper>
@@ -139,7 +139,7 @@ const DivServices = ( toggle ) => {
           </TextWrapper>
         </ImgCard>
         
-      </ServicesLeftWrapper>
+        </ServicesRightWrapper>
     </ServicesContainer>
   )
 }
