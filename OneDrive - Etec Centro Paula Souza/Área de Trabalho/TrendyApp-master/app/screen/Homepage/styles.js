@@ -7,7 +7,7 @@ export const Container = styled.SafeAreaView`
 export const Title = styled.Text`
     color: #FFF;
     font-size: 30px;
-    font-weight: 700;
+    font-Family: Montserrat_700Bold;
 `  
 
 export const IconTitle = styled.Text`
@@ -26,6 +26,7 @@ export const SubTitle = styled.Text`
     opacity: 0.4;
     margin-bottom: 30px;
     text-align: center;
+    font-Family: Montserrat_500Medium;
 `
 
 export const Input = styled.TextInput`

@@ -14,12 +14,16 @@ import TrendScreen from '../TrendScreen/TrendScreen';
 import ProfileScreen from '../ProfileScreen/ProfileScreen';
 import NotificationScreen from '../NotificationScreen/NotificationScreen';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import {LinearGradient} from 'expo-linear-gradient'
 
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator()
 
 function HubScreen( navigation ){
     return(
+        
+        
+        
         <Container style={{flex:1,backgroundColor:'#16293E', }}>
                 <Tab.Navigator
                     screenOptions={{
@@ -28,7 +32,7 @@ function HubScreen( navigation ){
                         tabBarStyle: {
                             height: 70,
                             margin: -20,
-                            padding: 0,
+                            padding: 10,
                             position: 'absolute',
                             backgroundColor: '#16293E',
                             color: '#FFFFFF',
@@ -64,6 +68,9 @@ function HubScreen( navigation ){
 
                 </Tab.Navigator>
         </Container>
+        
+         
+        
     )
 }
 

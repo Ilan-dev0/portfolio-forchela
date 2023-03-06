@@ -51,7 +51,7 @@ function  Signin({ navigation }) {
             <Input
                 placeholderTextColor="#fff"
                 placeholder="Username" 
-                
+                maxLength={30}
             >
             </Input>
             <Feather name="user" size={30} color="white" style={{position: 'absolute', right: 15, marginTop: 14}} />
@@ -67,7 +67,7 @@ function  Signin({ navigation }) {
                 placeholderTextColor="#fff"
                 secureTextEntry={true}
                 placeholder="Password"       
-                       
+                maxLength={30}       
                 ></Input>
             <Icon name="eye-slash" size={30} color="white"  style={{position: 'absolute', right: 15, marginTop: 14, marginLeft: 7}} />
             

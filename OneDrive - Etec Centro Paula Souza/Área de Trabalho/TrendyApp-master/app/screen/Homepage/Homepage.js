@@ -81,6 +81,18 @@ const moviesData = [
     }
 ];
 
+const lastNewsData = [
+    {
+        image: 'https://cdn.discordapp.com/attachments/963977573241602138/1038658104537124924/mano.webp'
+    },
+    {
+        image: 'https://cdn.discordapp.com/attachments/963977573241602138/1038658104537124924/mano.webp'
+    },
+    {
+        image: 'https://cdn.discordapp.com/attachments/963977573241602138/1038658104537124924/mano.webp'
+    }
+];
+
 const Tab = createBottomTabNavigator();
 
 function Homepage({ navigation }){
@@ -89,8 +101,8 @@ function Homepage({ navigation }){
         return(
             <View style={{justifyContent: 'center',}}>
                     <Text style={{color:'white', fontWeight: 'bold'}}>{item.title}</Text>
-                    <TouchableOpacity>
-                    <Image style={{width:'100%', height:200, borderRadius: 10 }} source={{uri: `${item.image}`}} />
+                    <TouchableOpacity onPress={() => navigation.navigate('MovieDetail')}>
+                    <Image style={{width:'90%', height:200, borderRadius: 10 }} source={{uri: `${item.image}`}} />
                     </TouchableOpacity>
             </View>
         );
@@ -135,10 +147,29 @@ function Homepage({ navigation }){
                     <Text style={{color:'white', fontFamily: 'Montserrat_500Medium', fontSize:20}}>Last News</Text>
                 </View>
 
-                <Image
-                    source={require('../../assets/mano.png')}
-                    style={{width: 338, height: 188, borderRadius: 20}}
+                <Carousel 
+                    data={lastNewsData}
+                    renderItem={renderItem.bind(this)}
+                    sliderWidth={400}
+                    itemWidth={350}
+                    useScrollView={true}
+                    enableSnap={true}
+                    loop={true}
+                    loopClonesPerSide={3}
+                            
                 />
+
+                <View style={{marginTop: 50, flexDirection: 'row', alignItems: 'center'}}>
+                    <Image 
+                        source={require('../../assets/twitter.png')}
+                        style={{marginRight: 10}}
+                    />
+                    <Title>Trending Topics</Title>
+
+                    <View style={{marginTop: 50, flexDirection: 'row', alignItems: 'center'}}>
+                        
+                    </View>
+                </View>
 
                 <View style={{marginTop: 50,}}>
                     <Title>Your Trendings</Title>
@@ -155,7 +186,7 @@ function Homepage({ navigation }){
                         alignItems:'center',
                     }}
                     >   
-                        <Input placeholder="Search" placeholderTextColor="#fff"/>
+                        <Input placeholder="Search" placeholderTextColor="#fff" style={{fontFamily: 'Montserrat_500Medium'}}/>
                         <Feather name="search" size={20} color="#C6C6C6" style={{marginRight: 5}} />
                     </View> 
 
@@ -219,7 +250,7 @@ function Homepage({ navigation }){
                     style={{width: 30, height: 30, marginRight: -60}}
                     />
                         <Text style={{color:'white', fontFamily: 'Montserrat_500Medium', fontSize:16}}>Trending Movies</Text>
-                        <SeeAll>
+                        <SeeAll onPress={() => navigation.navigate('Catalog')}>
                         <Text style={{color:'purple', fontFamily: 'Montserrat_500Medium', fontSize:16, textDecorationLine: 'underline'}}>See All</Text>
                         </SeeAll>
                     </View>
@@ -230,6 +261,8 @@ function Homepage({ navigation }){
                         sliderWidth={400}
                         itemWidth={150}
                         useScrollView={true}
+                        loop={true}
+                        loopClonesPerSide={4}
                     />
                 </View>
 
@@ -246,7 +279,7 @@ function Homepage({ navigation }){
                     style={{width: 30, height: 30, marginRight: -60}}
                     />
                     <Text style={{color:'white', fontFamily: 'Montserrat_500Medium', fontSize:16}}>Trending Anime</Text>
-                    <SeeAll>
+                    <SeeAll onPress={() => navigation.navigate('Catalog')}>
                     <Text style={{color:'purple', fontFamily: 'Montserrat_500Medium', fontSize:16, textDecorationLine: 'underline'}}>See All</Text>
                     </SeeAll>
                 </View>
@@ -256,6 +289,8 @@ function Homepage({ navigation }){
                         sliderWidth={400}
                         itemWidth={150}
                         useScrollView={true}
+                        loop={true}
+                        loopClonesPerSide={4}
                     />
                 </View>
             </ScrollView>
@@ -269,4 +304,3 @@ function Homepage({ navigation }){
 
 
 export default Homepage;
-

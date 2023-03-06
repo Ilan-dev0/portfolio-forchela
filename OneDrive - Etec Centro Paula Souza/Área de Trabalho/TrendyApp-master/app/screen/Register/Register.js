@@ -14,11 +14,12 @@ function Register({ navigation }) {
         <LinearGradient colors={['#16293E', '#1D1E32']}>
     <Container>
         
-            <Title>Register</Title>
+            <Title style={{marginBottom: 70}}>Register</Title>
             
 
-            <Icon onPress={() => navigation.navigate('Signin')} name="arrow-left" size={30} color="white"  style={{position:'absolute', top: 40, left: 25}} />
-            
+             <View>
+             <Icon onPress={() => navigation.navigate('Signin')} name="arrow-left" size={30} color="white"  style={{position:'absolute', top: -118, left: -150}} />
+             </View>
         
             <View style={{flexDirection: 'row',}}>
             <Input placeholderTextColor="#484848"
